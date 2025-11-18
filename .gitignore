@@ -1,0 +1,49 @@
+# ============================
+# PYTHON
+# ============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ============================
+# STREAMLIT
+# ============================
+.streamlit/
+
+# ============================
+# OPERATING SYSTEM / IDE
+# ============================
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# ============================
+# PROJECT FILES TO IGNORE
+# ============================
+# Ignore data folder (if large datasets)
+data/*
+
+# But keep sample data if needed:
+!data/*.csv
+!data/*.txt
+!data/readme.md
+
+# ============================
+# WHAT NOT TO IGNORE (IMPORTANT)
+# ============================
+# Keep models (needed for deployment)
+!models/
+!models/*.pkl
+!models/*.h5
+!models/lstm/
+!models/lstm/*.pkl
+!models/lstm/*.h5

@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENGINE_DIR = os.path.join(BASE_DIR, "engine")
 sys.path.append(ENGINE_DIR)
 
-from engine.engine import predict_sentiment   # <-- your function
+from engine import predict_sentiment   # <-- your function
 
 # ---------------------------
 # Streamlit UI

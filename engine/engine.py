@@ -5,9 +5,12 @@ import tensorflow as tf
 
 # %%
 import os
-BASE_DIR = r"D:\AI_PROJECTS\Sentiment Analysis"
-DATA_DIR = os.path.join(BASE_DIR, "data")
+
+# Base directory = project root in Streamlit
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 MODEL_DIR = os.path.join(BASE_DIR, "models")
+DATA_DIR = os.path.join(BASE_DIR, "data")
 
 # %%
 # Load TF-IDF

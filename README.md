@@ -17,8 +17,7 @@ A complete sentiment analysis system that predicts **six emotions** — sad, joy
 
 Sentiment Analysis/
 │
-├── app/
-│ └── app.py # Streamlit UI
+├── app.py # Streamlit UI
 │
 ├── engine/
 │ └── engine.py # Prediction engine (ML + LSTM + Ensemble)

@@ -1,11 +1,11 @@
-python_version == "3.10"
 streamlit
 numpy
 pandas
-tensorflow==2.13.0
-keras==2.13.1
+tensorflow==2.12.0
+keras==2.12.0
 scikit-learn
 xgboost
-joblib
 nltk
 regex
+huggingface_hub
+protobuf==3.20.3

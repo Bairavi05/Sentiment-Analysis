@@ -7,28 +7,28 @@ import tensorflow as tf
 import os
 
 # Base directory = project root in Streamlit
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
 # %%
 # Load TF-IDF
-with open(f"{MODEL_DIR}/tfidf_vectorizer.pkl", "rb") as f:
+with open(f"{MODEL_DIR}/ml/tfidf_vectorizer.pkl", "rb") as f:
     tfidf = pickle.load(f)
 
 # Load Label Encoder
-with open(f"{MODEL_DIR}/label_encoder.pkl", "rb") as f:
+with open(f"{MODEL_DIR}/ml/label_encoder.pkl", "rb") as f:
     le = pickle.load(f)
 
 # Load ML models
-with open(f"{MODEL_DIR}/decision_tree.pkl", "rb") as f:
+with open(f"{MODEL_DIR}/ml/decision_tree.pkl", "rb") as f:
     dt = pickle.load(f)
 
-with open(f"{MODEL_DIR}/naive_bayes.pkl", "rb") as f:
+with open(f"{MODEL_DIR}/ml/naive_bayes.pkl", "rb") as f:
     nb = pickle.load(f)
 
-with open(f"{MODEL_DIR}/xgboost.pkl", "rb") as f:
+with open(f"{MODEL_DIR}/ml/xgboost.pkl", "rb") as f:
     xgb = pickle.load(f)
 
 # Load LSTM
